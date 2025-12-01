@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card mx-auto mt-5" style="max-width: 400px;">
+    <div class="card-header"><h4>Iniciar Sesión</h4></div>
+    <div class="card-body">
+        <form method="POST">
+            <div class="mb-3">
+                <label>Usuario</label>
+                <input type="text" name="usuario" id="user-input" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label>Contraseña</label>
+                <input type="password" name="password" id="pass-input" class="form-control" required>
+            </div>
+            <button type="submit" id="login-btn" class="btn btn-primary w-100">Entrar</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
